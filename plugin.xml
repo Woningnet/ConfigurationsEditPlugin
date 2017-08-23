@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin id="edit-configurations-plugin" version="1.0.9" xmlns="http://www.phonegap.com/ns/plugins/1.0">
+
+    <name>edit-configurations-plugin</name>
+    <description>Cordova Plugin to add specific configurations to Android's Manifest.xml and Apple's Info.plist</description>
+    <license>MIT</license>
+    <keywords>cordova,configurations,ios,android,manifest,plist</keywords>
+
+    <hook type="before_plugin_add" src="hooks/update_platform_config.js" />
+
+</plugin>
