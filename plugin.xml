@@ -51,7 +51,7 @@
 	-->
 	<!-- Changing the language for iOS -->
 	<platform name="android">
-	    <preference name="android-versionName" value="8" />
+	    <preference name="android:versionName" value="8" />
 	</platform>
 	<platform name="ios">
 	    <config-file platform="ios" target="*-Info.plist" parent="CFBundleDevelopmentRegion">  
