@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="confs" version="0.1b" >
-    <platform name="android">
-        <preference name="android-minSdkVersion" value="19" />
-    </platform>
-    <platform name="ios">
-        <preference name="ErrorUrl" value="error.html" />
-    </platform>
-</widget>
