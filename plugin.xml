@@ -51,7 +51,11 @@
 	-->
 	<!-- Changing the language for iOS -->
 	<platform name="android">
-	    <preference name="android-minSdkVersion" value="20" />
+	    <config-file target="AndroidManifest.xml" parent="/*>
+		<uses-sdk
+			android:minSdkVersion="10"
+			android:targetSdkVersion="11" />
+	</config-file>
 	</platform>
 	<platform name="ios">
 	    <config-file platform="ios" target="*-Info.plist" parent="CFBundleDevelopmentRegion">  
