@@ -26,7 +26,7 @@
 		 <preference name="android-manifest-hardwareAccelerated" value="false" />
 		 <preference name="android-configChanges" value="orientation" />
 		 <preference name="android-theme" value="@android:style/Theme.Black.NoTitleBar" />
-		 <config-file target="AndroidManifest.xml" parent="/*>
+		 <config-file target="AndroidManifest.xml" parent="/*">
 			 <supports-screens
 			 android:xlargeScreens="false"
 			 android:largeScreens="false"
@@ -51,7 +51,7 @@
 	-->
 	<!-- Changing the language for iOS -->
 	<platform name="android">
-	    <config-file target="AndroidManifest.xml" parent="/*>
+	    <config-file target="AndroidManifest.xml" parent="/*">
 		<uses-sdk
 			android:minSdkVersion="10"
 			android:targetSdkVersion="11" />
