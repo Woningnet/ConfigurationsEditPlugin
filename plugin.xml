@@ -51,7 +51,7 @@
 	-->
 	<!-- Setting the Android app version & supported screens -->
 	<platform name="android">
-		<config-file target="AndroidManifest.xml" parent="/manifest">
+		<config-file target="AndroidManifest.xml">
 		    <manifest android:versionName="1.0" />
 	    </config-file>
 	    <config-file target="AndroidManifest.xml" parent="/*">
