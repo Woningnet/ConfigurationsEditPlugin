@@ -52,7 +52,7 @@
 	<!-- Setting the Android app version & supported screens -->
 	<platform name="android">
 		<config-file target="AndroidManifest.xml">
-		    android:versionName="1.0"
+		    <android:versionName="1.0" />
 	    </config-file>
 	    <config-file target="AndroidManifest.xml" parent="/*">
 		    <supports-screens
