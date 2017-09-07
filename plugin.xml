@@ -51,16 +51,14 @@
 	-->
 	<!-- Setting the Android app version & supported screens -->
 	<platform name="android">
-		<config-file target="AndroidManifest.xml">
-		    <manifest android:versionName="1.0" />
-	    </config-file>
-	    <config-file target="AndroidManifest.xml" parent="/*">
+		<preference name="android-manifest/@android:versionName" value="1.0" />
+	    	<config-file target="AndroidManifest.xml" parent="/*">
 		    <supports-screens
 			 android:xlargeScreens="false"
 			 android:largeScreens="true"
 			 android:normalScreens="true"
 			 android:smallScreens="true" />
-	    </config-file>
+	    	</config-file>
 	</platform>
 	<!-- Changing the language for iOS -->
 	<platform name="ios">
