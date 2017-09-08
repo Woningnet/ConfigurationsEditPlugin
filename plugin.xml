@@ -51,8 +51,9 @@
 	-->
 	<!-- Setting the Android app version & supported screens -->
 	<platform name="android">
+		<preference name="android-manifest/@android:versionName" value="1.0" />
 	    	<config-file target="AndroidManifest.xml" parent="/*">
-			android:versionName="1.0"
+			android-manifest/@android:versionNam
 		    	<supports-screens
 			 	android:xlargeScreens="false"
 			 	android:largeScreens="true"
