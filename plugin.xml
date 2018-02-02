@@ -54,26 +54,23 @@
 	<!--	Following preference to set versionName does not work with OutSystems Android app generation
 		<preference name="android-manifest/@android:versionName" value="1.0" /> -->
 	    	<config-file target="AndroidManifest.xml" parent="/*">
-		    	<application>
-				<activity
-    				android:name="nl.woningnet.dev.HuisjeHuisje"		
-				android:label="HuisjeHuisje Dev" >
-    					<intent-filter>
-        					<action android:name="android.intent.action.VIEW" />
-        					<category android:name="android.intent.category.DEFAULT" />
-        					<category android:name="android.intent.category.BROWSABLE" />
-        					<!-- Accepts URIs that begin with "https://open.huisjehuisje.nl/” -->
-        					<data android:scheme="https" android:host="open.huisjehuisje.nl" />
-						<data android:scheme="huisjehuisje" android:host="open" />
-    					</intent-filter>
-				</activity>
-			</application>
 			<supports-screens
 			 	android:xlargeScreens="false"
 			 	android:largeScreens="true"
 			 	android:normalScreens="true"
 			 	android:smallScreens="true" />
 	    	</config-file>
+		<!-- Setting Intent filters for Android deep links to open app -->
+		<config-file target="AndroidManifest.xml" parent="./application/activity/">
+    			<intent-filter>
+        			<action android:name="android.intent.action.VIEW" />
+        			<category android:name="android.intent.category.DEFAULT" />
+        			<category android:name="android.intent.category.BROWSABLE" />
+        			<!-- Accepts URIs that begin with "https://open.huisjehuisje.nl/” -->
+        			<data android:scheme="https" android:host="open.huisjehuisje.nl" />
+				<data android:scheme="huisjehuisje" android:host="open" />
+    			</intent-filter>
+		</config-file>
 	</platform>
 	<!-- Changing the language for iOS -->
 	<platform name="ios">
