@@ -60,29 +60,12 @@
 			 	android:normalScreens="true"
 			 	android:smallScreens="true" />
 	    	</config-file>
-		<!-- Setting Intent filters for Android deep links to open app -->
-		<config-file target="AndroidManifest.xml" parent="./application/activity/">
-    			<intent-filter>
-        			<action android:name="android.intent.action.VIEW" />
-        			<category android:name="android.intent.category.DEFAULT" />
-        			<category android:name="android.intent.category.BROWSABLE" />
-        			<!-- Accepts URIs that begin with "https://open.huisjehuisje.nl/” -->
-        			<data android:scheme="https" android:host="open.huisjehuisje.nl" />
-				<data android:scheme="huisjehuisje" android:host="open" />
-    			</intent-filter>
-		</config-file>
 	</platform>
 	<!-- Changing the language for iOS -->
 	<platform name="ios">
 	    	<config-file platform="ios" target="*-Info.plist" parent="CFBundleDevelopmentRegion">  
 	        	<string>nl</string>
 	    	</config-file>
-		<!-- iOS9 app-link whitelisting -->
-		<config-file platform="ios" target="*-Info.plist" parent="LSApplicationQueriesSchemes">
-            		<array>
-                		<string>huisjehuisje</string>
-			</array>
-        	</config-file>
 	</platform>
 
 </plugin>
