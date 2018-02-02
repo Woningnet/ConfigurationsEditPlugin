@@ -54,7 +54,31 @@
 	<!--	Following preference to set versionName does not work with OutSystems Android app generation
 		<preference name="android-manifest/@android:versionName" value="1.0" /> -->
 	    	<config-file target="AndroidManifest.xml" parent="/*">
-		    	<supports-screens
+		    	<application>
+				<activity
+    				android:name="nl.woningnet.HuisjeHuisje"
+    				android:label="HuisjeHuisje" >
+    					<intent-filter>
+        					<action android:name="android.intent.action.VIEW" />
+        					<category android:name="android.intent.category.DEFAULT" />
+        					<category android:name="android.intent.category.BROWSABLE" />
+        					<!-- Accepts URIs that begin with "https://open.huisjehuisje.nl/” -->
+        					<data android:scheme="https" android:host="open.huisjehuisje.nl" />
+    					</intent-filter>
+				</activity>
+				<activity
+    				android:name="nl.woningnet.dev.HuisjeHuisje"
+    				android:label="HuisjeHuisje Dev" >
+    					<intent-filter>
+        					<action android:name="android.intent.action.VIEW" />
+        					<category android:name="android.intent.category.DEFAULT" />
+        					<category android:name="android.intent.category.BROWSABLE" />
+        					<!-- Accepts URIs that begin with "https://dev-open.huisjehuisje.nl/” -->
+        					<data android:scheme="https" android:host="dev-open.huisjehuisje.nl" />
+    					</intent-filter>
+				</activity>
+			</application>
+			<supports-screens
 			 	android:xlargeScreens="false"
 			 	android:largeScreens="true"
 			 	android:normalScreens="true"
