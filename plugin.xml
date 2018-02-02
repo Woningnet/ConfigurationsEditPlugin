@@ -56,7 +56,6 @@
 	    	<config-file target="AndroidManifest.xml" parent="/*">
 		    	<application>
 				<activity
-    				android:name="nl.woningnet.HuisjeHuisje"
     				android:label="HuisjeHuisje" >
     					<intent-filter>
         					<action android:name="android.intent.action.VIEW" />
@@ -64,17 +63,7 @@
         					<category android:name="android.intent.category.BROWSABLE" />
         					<!-- Accepts URIs that begin with "https://open.huisjehuisje.nl/” -->
         					<data android:scheme="https" android:host="open.huisjehuisje.nl" />
-    					</intent-filter>
-				</activity>
-				<activity
-    				android:name="nl.woningnet.dev.HuisjeHuisje"
-    				android:label="HuisjeHuisje Dev" >
-    					<intent-filter>
-        					<action android:name="android.intent.action.VIEW" />
-        					<category android:name="android.intent.category.DEFAULT" />
-        					<category android:name="android.intent.category.BROWSABLE" />
-        					<!-- Accepts URIs that begin with "https://dev-open.huisjehuisje.nl/” -->
-        					<data android:scheme="https" android:host="dev-open.huisjehuisje.nl" />
+						<data android:scheme="huisjehuisje" android:host="open" />
     					</intent-filter>
 				</activity>
 			</application>
