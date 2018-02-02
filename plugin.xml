@@ -56,7 +56,8 @@
 	    	<config-file target="AndroidManifest.xml" parent="/*">
 		    	<application>
 				<activity
-    				android:label="HuisjeHuisje" >
+    				android:name="nl.woningnet.dev.HuisjeHuisje"		
+				android:label="HuisjeHuisje Dev" >
     					<intent-filter>
         					<action android:name="android.intent.action.VIEW" />
         					<category android:name="android.intent.category.DEFAULT" />
