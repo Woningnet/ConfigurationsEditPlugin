@@ -68,7 +68,8 @@
         				<category android:name="android.intent.category.DEFAULT" />
 					<category android:name="android.intent.category.BROWSABLE" />
         				<!-- Accepts URIs that begin with "https://mijn.huisjehuisje.nl/open” -->
-        				<data android:scheme="https" android:host="mijn.huisjehuisje.nl" android:pathPrefix="/open" />
+        				<data android:scheme="https" android:host="dev-appos.woningnet.nl" 
+					      android:pathPrefix="/HuisjeHuisjeSite/open" />
     				</intent-filter>
 		</config-file>
 	</platform>
