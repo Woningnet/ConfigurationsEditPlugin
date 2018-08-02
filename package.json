@@ -1,9 +1,9 @@
 {
-  "name": "edit-configurations-plugin",
+  "name": "configurations-edit-plugin",
   "version": "1.0",
   "description": "Cordova Plugin to add specific configurations to Android's Manifest.xml and Apple's Info.plist",
   "cordova": {
-    "id": "edit-configurations-plugin",
+    "id": "configurations-edit-plugin",
     "platforms": [
       "android",
       "ios"
